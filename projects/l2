@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday [Name]!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fef7f3;
+        color: #333;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        color: #ff4081;
+    }
+    
+    .hero {
+        background-color: #ffebf2;
+        padding: 30px;
+        position: relative;
+    }
+    
+    .hero-img {
+        width: 300px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    button {
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #f50057;
+    }
+    
+    /* Countdown styles */
+    #countdown {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    
+    /* Interactive section styles */
+    textarea {
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    
+    .gallery .photos {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .gallery .photos img {
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    footer {
+        background-color: #ff4081;
+        color: white;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    
+    footer p {
+        font-size: 1rem;
+    }
+    
+    /* Quiz section styles */
+    .quiz-container {
+        border: 2px solid #ff4081;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        background-color: #fff;
+    }
+    
+    .quiz button {
+        margin: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    /* Scoreboard styles */
+    .scoreboard {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: #ff4081;
+    }
+</style>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Happy Birthday, [Name]!</h1>
+            <p>Let's Celebrate!</p>
+            <div id="countdown"></div>
+            <img src="birthday-image.jpg" alt="Birthday Photo" class="hero-img">
+        </div>
+    </header>
+    
+    <section class="interactive">
+        <h2>Leave a Birthday Message</h2>
+        <form id="message-form">
+            <textarea id="message" placeholder="Write a message here..."></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="messages-list"></div>
+    </section>
+    
+    <section class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="photos">
+            <img src="photo1.jpg" alt="Photo 1">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+    </section>
+
+    <section class="quiz">
+        <h2>How Well Do You Know [Name]?</h2>
+        <div id="quiz-container" class="quiz-container">
+            <p id="quiz-question">Question: What’s their favorite color?</p>
+            <button onclick="checkAnswer('Blue')">Blue</button>
+            <button onclick="checkAnswer('Red')">Red</button>
+            <button onclick="checkAnswer('Green')">Green</button>
+            <button onclick="checkAnswer('Yellow')">Yellow</button>
+            <p id="quiz-result"></p>
+        </div>
+        <div id="scoreboard" class="scoreboard"></div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact: birthday@example.com</p>
+        </div>
+        <p>&copy; 2025 Happy Birthday, [Name]!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+

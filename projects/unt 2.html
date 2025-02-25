@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js" defer></script>
+</head>
+
+<body class="bg-gradient-to-r from-gray-100 via-blue-50 to-gray-100">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Engineering Excellence Co.</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:underline">About Us</a></li>
+                    <li><a href="#services" class="hover:underline">Services</a></li>
+                    <li><a href="#projects" class="hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96 text-white flex items-center justify-center" style="background-image: url('https://source.unsplash.com/1600x900/?engineering,technology');">
+        <div class="text-center bg-blue-900 bg-opacity-50 p-6 rounded-lg">
+            <h2 class="text-5xl font-bold mb-4">Innovative Solutions for Complex Problems</h2>
+            <p class="text-xl mb-6">Delivering engineering excellence to transform your vision into reality.</p>
+            <a href="#services" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-6 rounded shadow-lg">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gradient-to-r from-blue-50 to-gray-50">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8 text-blue-700">About Us</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <p class="text-lg text-gray-700 leading-relaxed">We are a leading engineering company specializing in innovative solutions across multiple industries, including construction, technology, and energy. Our team of experts is committed to delivering exceptional results through advanced technologies and proven methodologies.</p>
+                <img src="https://source.unsplash.com/600x400/?team,engineering" alt="About Us Image" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8 text-blue-700">Our Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://source.unsplash.com/400x300/?civil,construction" alt="Civil Engineering" class="rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-4 text-blue-800">Civil Engineering</h4>
+                    <p class="text-gray-600">Providing state-of-the-art designs for infrastructure and urban development projects.</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://source.unsplash.com/400x300/?mechanical,engineering" alt="Mechanical Engineering" class="rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-4 text-blue-800">Mechanical Engineering</h4>
+                    <p class="text-gray-600">Creating innovative solutions for manufacturing and mechanical systems.</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://source.unsplash.com/400x300/?electrical,technology" alt="Electrical Engineering" class="rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-4 text-blue-800">Electrical Engineering</h4>
+                    <p class="text-gray-600">Developing cutting-edge technologies in power systems and electronics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8 text-blue-700">Our Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-white to-blue-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" x-data="{ open: false }">
+                    <img src="https://source.unsplash.com/400x300/?construction,building" alt="Building Under Construction" class="rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-blue-800">Project A</h4>
+                    <p class="text-gray-600 mb-4">A brief description of the project.</p>
+                    <button class="text-blue-600 hover:underline" @click="open = !open">Read More</button>
+                    <p class="mt-4 text-gray-600" x-show="open">Detailed information about Project A and its significance.</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" x-data="{ open: false }">
+                    <img src="https://source.unsplash.com/400x300/?energy" alt="Project 2" class="rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-blue-800">Project B</h4>
+                    <p class="text-gray-600 mb-4">A brief description of the project.</p>
+                    <button class="text-blue-600 hover:underline" @click="open = !open">Read More</button>
+                    <p class="mt-4 text-gray-600" x-show="open">Detailed information about Project B and its significance.</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" x-data="{ open: false }">
+                    <img src="https://source.unsplash.com/400x300/?technology" alt="Project 3" class="rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-blue-800">Project C</h4>
+                    <p class="text-gray-600 mb-4">A brief description of the project.</p>
+                    <button class="text-blue-600 hover:underline" @click="open = !open">Read More</button>
+                    <p class="mt-4 text-gray-600" x-show="open">Detailed information about Project C and its significance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-blue-50 to-gray-50">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8 text-blue-700">Contact Us</h3>
+            <p class="text-lg text-gray-700 mb-6">Have a question or need more information? Reach out to us!</p>
+            <form class="max-w-lg mx-auto space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded focus:ring focus:ring-blue-200">
+                <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded focus:ring focus:ring-blue-200">
+                <textarea placeholder="Your Message" rows="4" class="w-full p-3 border border-gray-300 rounded focus:ring focus:ring-blue-200"></textarea>
+                <button type="submit" class="bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow/
