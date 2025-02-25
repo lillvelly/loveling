@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday loveling!</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef7f3;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff4081;
+        }
+
+        .hero {
+            background-color: #ffebf2;
+            padding: 30px;
+            position: relative;
+        }
+
+        .hero-img {
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f50057;
+        }
+
+        /* Countdown styles */
+        .countdown {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Interactive section styles */
+        textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .gallery .photos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            max-height: 400px; /* Set a fixed height */
+        }
+
+        .gallery .photos img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Quiz section styles */
+        .quiz-container {
+            border: 2px solid #ff4081;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+        }
+
+        .quiz button {
+            margin: 5px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Happy Birthday, Loveling Enam !</h1>
+            <p>Let's Celebrate!</p>
+            <div class="countdown">Countdown: 5 days left</div>
+            <img src="main pic.jpg" alt="birthday photo" class="hero-img"> <!-- Updated image source -->
+        </div>
+    </header>
+
+    <section class="interactive">
+        <h2>Leave a Birthday Message</h2>
+        <form>
+            <textarea placeholder="Write a message here..."></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="photos">
+            <img src="love 1.jpg" alt="Photo 1">
+            <img src="love 3.jpg" alt="Photo 2">
+            <img src="love 4.jpg" alt="Photo 3">
+            <img src="Snapchat-1545850286.jpg" alt="photo 4">
+            <img src="Snapchat-1720690156.jpg" alt="photo 5">
+            <img src="Snapchat-1789579905.jpg" alt="photo 6">
+        </div>
+    </section>
+
+    <section class="quiz">
+        <h2>How Well Do You Know Loveling?</h2>
+        <div id="quiz-container" class="quiz-container">
+            <p id="quiz-question">Question: What’s her favorite color?</p>
+            <button onclick="checkAnswer('Blue')">Blue</button>
+            <button onclick="checkAnswer('Red')">Red</button>
+            <button onclick="checkAnswer('Green')">Green</button>
+            <button onclick="checkAnswer('Yellow')">Yellow</button>
+            <p id="quiz-result"></p>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+        </div>
+    </section>
+
+    <section class="donations">
+        <h2>Support Loveling</h2>
+        <p><h3>If you would like to make a donation, please use the following details:</h3></p>
+        <p>Phone Number: 0545161874</p>
+        <p>MOMO name:DELADEM CHRISTLOVE EYRAM</p>
+        
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact: veliadenuh12@gmail.com</p>
+        </div>
+        <p>&copy; 2025 Happy Birthday, Loveling!</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Ensure this path is correct -->
+</body>
+</html>
